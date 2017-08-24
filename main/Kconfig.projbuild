@@ -1,0 +1,37 @@
+menu "Demo Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "tidyjiang-ssid"
+	help
+		SSID (network name) to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+	default "tidyjiang-passwd"
+	help
+		WiFi password (WPA or WPA2) to use.
+
+		Can be left blank if the network has no security set.	
+config FTP_USER
+    string "FTP USER"
+    default "esp32"	
+    help
+        the user_name of FTP.
+config FTP_PASS
+    string "FTP PASS"
+    default "esp32"	
+    help
+        FTP password of FTP.
+config COMMAND_PORT
+    int "COMMAND PORT"
+    default "21"
+    help
+        the port to command tcp.
+config DATA_PORT
+    int "DATA PORT"
+    default "1300"
+    help
+        the port to command tcp.    
+endmenu
+
